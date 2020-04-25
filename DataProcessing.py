@@ -4,7 +4,7 @@ import os
 
 ts_confirmed = pd.read_csv("JohnhopkinsData/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv")
 ts_deaths = pd.read_csv("JohnhopkinsData/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv")
-ts_recovered = pd.read_csv("JohnhopkinsDatacsse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv")
+ts_recovered = pd.read_csv("JohnhopkinsData/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv")
 
 #Turn the data into long format
 confirmed = ts_confirmed.melt(id_vars = ["Province/State", "Country/Region", "Lat", "Long"], var_name = "Date", value_name = "Confirmed Cases")
